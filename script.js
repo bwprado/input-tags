@@ -1,11 +1,5 @@
 const ul = document.querySelector('ul')
 const removeAllButton = document.querySelector('button')
-const head = document.querySelector('head')
-const link = document.createElement('link')
-link.type = 'text/css'
-link.rel = 'stylesheet'
-link.href = 'https://cdn.jsdelivr.net/gh/bwprado/input-tag/input-tags.css'
-head.appendChild(link)
 
 input = ul.querySelector('input')
 
