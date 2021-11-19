@@ -29,7 +29,7 @@ const removeAllTags = () => {
 
 const returnAddedTag = tags => {
 	const element = document.querySelector('#comp-kw2pehbe > input-tags')
-	element.dispatchEvent(new CustomEvent('test', { tags: tags }))
+	element.dispatchEvent(new CustomEvent('tags', { detail: tags }))
 }
 
 const addTag = e => {
