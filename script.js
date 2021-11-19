@@ -1,5 +1,6 @@
 const ul = document.querySelector('ul')
 const removeAllButton = document.querySelector('button')
+const p = document.querySelector('p')
 
 input = ul.querySelector('input')
 
@@ -22,7 +23,7 @@ const removeTag = (el, tag) => {
 }
 
 const removeAllTags = () => {
-	console.log('test')
+	p.textContent = 'teste'
 	tags = []
 	ul.querySelectorAll('li').forEach(li => li.remove())
 	const element = document.querySelector("#comp-kw2pehbe > input-tags")
