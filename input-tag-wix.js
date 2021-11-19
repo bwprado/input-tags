@@ -14,7 +14,7 @@ class InputTags extends HTMLElement {
 		linkToIcons.href = 'https://unicons.iconscout.com/release/v4.0.0/css/thinline.css'
 		linkToIcons.rel = 'stylesheet'
 		script.type = 'text/javascript'
-		script.src = 'https://cdn.jsdelivr.net/gh/bwprado/input-tags@latest/script.js'		
+		script.src = 'https://cdn.jsdelivr.net/gh/bwprado/input-tags@latest/script.js'
 		head.appendChild(linkToStyle)
 		head.appendChild(linkToIcons)
 		head.appendChild(script)
