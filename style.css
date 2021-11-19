@@ -50,7 +50,7 @@ body{
   border-radius: 5px;
   border: 1px solid #a6a6a6;
 }
-.content ul li{
+.ul__li{
   color: #333;
   margin: 4px 3px;
   list-style: none;
