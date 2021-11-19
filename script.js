@@ -24,7 +24,9 @@ const removeTag = (el, tag) => {
 const removeAllTags = () => {
 	tags = []
 	ul.querySelectorAll('li').forEach(li => li.remove())
-	document.getElementsByTagName('input-tags')[0].dispatchEvent(
+	const element = document.getElementsByTagName('input-tags')[0]
+	console.log(element)
+	element.dispatchEvent(
 		new CustomEvent('test', { detail: { x: 'test' } })
 	)
 	
