@@ -57,7 +57,8 @@ body{
   border-radius: 5px;
   background: #F2F2F2;
   padding: 5px 8px 5px 10px;
-  border: 1px solid #e3e1e1;
+  border: 1px solid #d1d0d0;
+  font-size: 14px;
 }
 .content ul li i{
   height: 20px;
@@ -69,6 +70,9 @@ body{
   border-radius: 50%;
   background: #dfdfdf;
   justify-content: center;
+}
+.content ul li i:hover {
+  background: #949494;
 }
 .content ul input{
   flex: 1;
