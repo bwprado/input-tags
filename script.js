@@ -24,6 +24,10 @@ const removeTag = (el, tag) => {
 const removeAllTags = () => {
 	tags = []
 	ul.querySelectorAll('li').forEach(li => li.remove())
+	document.getElementsByTagName('input-tags')[0].dispatchEvent(
+		new CustomEvent('test', { detail: { x: 'test' } })
+	)
+	
 }
 
 const addTag = e => {
@@ -46,6 +50,3 @@ const addTag = e => {
 
 input.addEventListener('keydown', addTag)
 removeAllButton.addEventListener('click', removeAllTags)
-removeAllButton.dispatchEvent(
-	new CustomEvent('test', { detail: { x: 'test' } })
-)
