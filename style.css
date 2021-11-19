@@ -72,7 +72,7 @@ body{
   justify-content: center;
 }
 .content ul li i:hover {
-  color: red;
+  color: rgb(0, 0, 0);
   background: #949494;
 }
 .content ul input{
