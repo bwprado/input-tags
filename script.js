@@ -12,7 +12,7 @@ const createTag = () => {
 		.slice()
 		.reverse()
 		.forEach(tag => {
-			const liTag = `<li class="content ul li">${tag} <i class="uit uit-multiply" onclick="removeTag(this, '${tag}')" id="test"></i></li>`
+			const liTag = `<li class="ul__li">${tag} <i class="uit uit-multiply" onclick="removeTag(this, '${tag}')" id="test"></i></li>`
 			ul.insertAdjacentHTML('afterbegin', liTag)
 		})
 }

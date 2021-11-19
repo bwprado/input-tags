@@ -88,10 +88,10 @@ body{
   cursor: pointer;
   padding: 9px 15px;
   border-radius: 5px;
-  background: #12ee80;
+  background: #020202;
   transition: background 0.3s ease;
 	text-decoration: none;
 }
 .details__button:hover{
-  background: #09b961;
+  background: #696969;
 }
