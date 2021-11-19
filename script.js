@@ -22,6 +22,7 @@ const removeTag = (el, tag) => {
 }
 
 const removeAllTags = () => {
+	console.log('test')
 	tags = []
 	ul.querySelectorAll('li').forEach(li => li.remove())
 	const element = document.getElementsByTagName('input-tags')[0]
