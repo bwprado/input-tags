@@ -12,7 +12,7 @@ const createTag = () => {
 		.slice()
 		.reverse()
 		.forEach(tag => {
-			const liTag = `<li class="ul__li">${tag} <i class="uit uit-multiply" onclick="removeTag(this, '${tag}')" id="test"></i></li>`
+			const liTag = `<li class="ul__li">${tag}<i class="uit uit-multiply" onclick="removeTag(this, '${tag}')"></i></li>`
 			ul.insertAdjacentHTML('afterbegin', liTag)
 		})
 }
@@ -23,15 +23,13 @@ const removeTag = (el, tag) => {
 }
 
 const removeAllTags = () => {
-	p.textContent = 'teste'
 	tags = []
 	ul.querySelectorAll('li').forEach(li => li.remove())
-	const element = document.querySelector("#comp-kw2pehbe > input-tags")
-	console.log(element)
-	element.dispatchEvent(
-		new CustomEvent('test', { detail: { x: 'test' } })
-	)
-	
+}
+
+const returnAddedTag = tags => {
+	const element = document.querySelector('#comp-kw2pehbe > input-tags')
+	element.dispatchEvent(new CustomEvent('test', { tags: tags }))
 }
 
 const addTag = e => {
@@ -44,6 +42,7 @@ const addTag = e => {
 		if (tag.length > 1 && !tags.includes(tag)) {
 			tag.split(',').forEach(t => {
 				tags.push(t)
+				returnAddedTag(tags)
 				createTag()
 			})
 		}
